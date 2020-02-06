@@ -1,0 +1,26 @@
+<ActionBar title="Details"></ActionBar>
+<!-- <Label class="h4 m-15" text="Time"></Label> -->
+<FlexboxLayout flexDirection="column">
+    <!-- <Button text="Count Up" class="button-primary" (tap)="countUp()"></Button>
+    <Button text="Count Down" class="button-danger" (tap)="countDown()" *ngIf="number > 0"></Button> -->
+    <!-- <Button text="Count Down" class="button-danger" (tap)="countDown()" *ngIf="number > 0 && number % 5 != 0; else elseBlock"></Button> -->
+
+    <FlexboxLayout class="m-15">
+        <Label class="h2" [text]="item.id + '. '"></Label>
+        <Label class="h2" [text]="item.name"></Label>
+    </FlexboxLayout>
+    <StackLayout>
+        <Label class="h3 m-15" text="Position: {{item.role}}"></Label>
+    </StackLayout>
+    <!-- <FlexboxLayout>
+        <Label class="h4 m-15" text="Points: {{number}}"></Label>
+    </FlexboxLayout> -->
+    <!-- <ng-template #elseBlock>
+        <ActivityIndicator busy="true" color="red" width="100" height="100"></ActivityIndicator>
+    </ng-template> -->
+    <!-- <Button text="Set Time" class="button-primary" *ngIf="!show" (tap)="showTime()"></Button>
+    <Button text="Close" class="button-danger" *ngIf="show" (tap)="showTime()"></Button>
+    <TimePicker *ngIf="show" hour="9" minute="25" maxHour="23" maxMinute="59" minuteInterval="5" (timeChange)="onTimeChanged($event)">
+    </TimePicker> -->
+    <Button text="Back" class="button-primary" [nsRouterLink]="['/items']"></Button>
+</FlexboxLayout>

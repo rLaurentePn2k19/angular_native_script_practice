@@ -1,0 +1,27 @@
+/* Add mobile styles for the component here.  */
+.page{
+    /* margin-top: %; */
+    align-items: center;
+}
+
+.form{
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.header{
+    font-size: 25px;
+    text-align: center;
+    color: red;
+    font-weight: 600;
+    margin-bottom: 3%;
+}
+
+/* .input-field{
+    margin-bottom: 3%;
+} */
+
+.input{
+    font-size: 18px;
+}

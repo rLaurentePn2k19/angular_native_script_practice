@@ -1,0 +1,13 @@
+<ActionBar title="Details"></ActionBar>
+<FlexboxLayout class="page">
+    <StackLayout class="form">
+        <Label text="Update Players" class="header"> </Label>
+        <StackLayout class="input-field">
+            <TextField class="input"  hint="Enter name" [text]="itemToUpdate.name" (textChange)="onTextChangeName($event)"></TextField>
+        </StackLayout>
+        <StackLayout class="input-field">
+            <TextField class="input"  hint="Enter role" [text]="itemToUpdate.role" (textChange)="onTextChangeRole($event)"></TextField>
+        </StackLayout>
+        <Button text="Save" class="-outline -rounded-sm" (tap)="update()" [nsRouterLink]="['/item',itemToUpdate.id]"></Button>
+    </StackLayout>
+</FlexboxLayout>

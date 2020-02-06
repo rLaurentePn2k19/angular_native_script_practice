@@ -1,0 +1,14 @@
+<FlexboxLayout class="page">
+    <StackLayout class="form">
+        <!-- <Label text="Add Player" class="header"> </Label> -->
+        <StackLayout class="input-field">
+            <!-- <TextField class="input" hint="Enter name" [text]="name" [(ngModel)]="text" (textChange)="onTextChange($event)"></TextField> -->
+            <TextField class="input" hint="Enter name" [(ngModel)]="name"></TextField>
+        </StackLayout>
+        <StackLayout class="input-field">
+            <!-- <TextField class="input" hint="Enter name" [text]="name" [(ngModel)]="text" (textChange)="onTextChange($event)"></TextField> -->
+            <TextField class="input" hint="Enter role" [(ngModel)]="role"></TextField>
+        </StackLayout>
+        <Button [text]="buttonText" (tap)="testFunction()" class="button-primary"></Button>
+    </StackLayout>
+</FlexboxLayout>
